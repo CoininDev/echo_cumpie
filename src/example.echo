@@ -1,6 +1,7 @@
 func Add ~
-  when [a]:[b] ~
+  when [a]:[b] do
     <- {a + b}
+  ok
 
-func Main ~
+func Main
   Printf <- message:{"" + Add<-5:7}
